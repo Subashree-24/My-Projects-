@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Table-->
+<center>
+    <h1>IPL TEAM</h1>
+    <table border="5" bgcolor="#2fffrr" cellspacing="35" cellpadding="15">111
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Team</th>
+        </tr>
+    </thead>  
+    <tbody> 
+        <tr>
+            <td rowspan="3">Contents</td>
+            <td>Dhoni MS</td>
+            <td>20</td>
+            <td>CSK</td>
+        </tr>
+        <tr>
+            <td>Virat Kohli</td>
+            <td>45</td>
+            <td>RCB</td>
+        </tr>
+        <tr>
+            <td>Hardik Pandya</td>
+            <td>35</td>
+            <td>MI</td>
+        </tr>
+    </tbody>
+    <tfoot>
+       <tr>
+        <td>Total</td>
+       </tr>
+    </tfoot>
+    </table>
+    </center>
+    <br>
+    
+    <!--Forms-->
+    <h1>Not Alligned</h1>
+    <form>
+        Name: <input type="text"><br>
+        Age:  <input type="number">
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <br>
+    <center>
+    
+    <!--We can allign the forms using the table-->
+    <h1>Alligned</h1>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="uname">Name:</label> </td>
+                <td><input type="text" id="uname" name="uname" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Age: </td>
+                <td><input type="number" placeholder="Enter your age"></td>
+            </tr>11
+1           <tr>
+                <td>Gender: </td>
+ 1               <td><!--Two gender can be selected-->
+                    <input type="radio">Male
+                    <input type="radio">Female
+                
+                    <!--Here only one option is selected if we give same name(one of the attribute in input),it will take it as a group-->
+                    <input type="radio" name="Gender">Male
+                   <input type="radio" name="Gender">Female
+  1              </td>
+            </tr>
+            <tr>
+                <td><label>Department:</label> </td>
+   11             <td>
+                    <select>
+                        <option>CSE</option>
+                        <option>IT</option>
+                        <option>ECE</option>
+                    </select>
+     1       11    </td>
+      1   111   </tr>
+        11    <tr>
+       1         <td>Upload your resume: </td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td></td><td><input type="submit"></td>
+            </tr>
+            <tr>
+                <td></td><td><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    
+    <!--Text in HTML-->
+    <!--Structural tag(starting in new line)-->
+    <p><i>Hi</i> there! I am <b>Subashree</b></p>
+    <p>H<sub>2</sub>O and Area<sup>2</sup></p>
+    <strong>Keep it up</strong>
+    <em>You can Do it</em>
+    <br>
+    <q>Never Ever Give Up</q>
+    <blockquote>You can do it... You Get what you want</blockquote>
+    <abbr>ISRO isro</abbr>
+    <br>
+    <cite>Examples given</cite> By Subashree
+    <br>
+    <dfn>Triangle has three sides</dfn>
+    <address>xyz@gmail.com</address>
+    <del>Price:500</del><ins>Now Only 300</ins>
+    <br>
+    <s>Represents the Invalid thing</s>
+    <br>
+    <u>Hi there</u>
+<hr>
+</center>
+    <!--Lists-->
+    <h2><center>Lists</center>List <i>Lists</i></h2>
+    <ul>
+        <li>Pencil</li>
+        <li>Pen</li>
+        <ul><li>Ink Pen</li>
+        <li>Ballpoint</li></ul>
+    </ul>
+    <ol type="a" start="3">
+        <li>Pencil</li>
+        <ul><li>Wood pencil</li>
+            <li>lead pencil</li></ul>
+        <li>Pen</li>
+    </ol>
+    <dl>
+        <dt>Triangle</dt>
+        <dd>Has three sides. Area of the Triangle is a<sup>3</sup>.</dd>
+    </dl>
+
+
+   <hr>
+    <!--File can be uploaded-->
+    <input type="file">    
+<br><hr>
+
+<h1>Detailed Forms</h1>
+
+<form action="Catering.html" align="center">
+    <!--Method Get or Post--><!--/food/index.html: to go to file inside a folder-->
+    <div>
+       <!--By using division tag, we can grp certain and tags and can style them-->
+       <!--for attribute : Idhoda label idhan nu sola-->
+        
+       <label for="username">Username</label>
+    
+       <!--id vachi kuda style panalam. Name: says the purpose of the field(i,e meant for username)-->
+     
+       <input type="text" name="username" id="username" maxlength="10" required>
+    </div>
+    
+    <div>
+        <!--Instead of for we can also give like this, also the field will be highlighted-->
+        <label> Password
+            <input type="password" required>
+        
+            <!--Required: So far, Without entering the details, if we give sign up, it navigates us. 
+            To avoid this make a validation. Therefore, using Required field(Says that its mandatory to fill out, so only it navigates you) -->
+        
+        </label>
+    </div>
+    
+    <div>
+        <input type="text" name="username" id="username" placeholder="Enter username">
+    <br>
+    <p>Enter username<input type="text" value="suba"></p>
+    </div>
+
+    <div>1
+        <label for="dept">Department: </label>
+        <input type="text" placeholder="Choose" id="dept" name="dept">
+    </div>
+    
+    <div>
+        <label for="year">Year of Birth</label>
+        <input type="number" id="year" name="year" maxlength="4" step="2" min="1900" max="2050">
+    </div>
+    
+    <div>
+        <label>Date of Birth</label>
+        <input type="date" min="1995-01-01">
+    </div>
+    
+    <div>
+        <input type="url" placeholder="Enter url">
+        <br>
+        <input type="email" placeholder="Email"><br>
+        <input type="search" placeholder="Search here"><br>
+        <label>About Me</label>
+        <textarea rows="10" cols="40">About me...</textarea>
+    </div>
+    <!--By giving submit type, if we press enter the credentials will be submitted-->
+    <bu111tton type="submit">SignUp</button>
+    <button type="reset">Reset</button>
+    <input type="checkbox" name="check" id="box"><!--checkbox is optional we can tick 0 or more-->
+    
+</form>
+<pre>Hello,
+    This is a preformatted tag.
+    Ouputs the format as it is given..
+</pre>
+<h3>End</h3>
+<br>
+<br>
+<br>
+<br>
+<hr>
+</body>
+</html>
+
+
+<html>
+    <head><!--Internal CSS(Giving css inside the file itself)-->
+        <style type="text/CSS">
+            /*First specify the selector*/
+            /*All h3 tags become red*/
+            /*We mostly prefer external css*/
+            h3{
+                color: tomato;
+                text-decoration: underline;
+            }
+            p{
+                color: aqua;
+            }
+            /*emoji converions*/
+            ul{
+                list-style-type: '\1F4B2';
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Html using CSS</h1>
+        <!--Inline CSS-->
+        <h2 style="color:aqua;text-decoration:overline;"> Styled Tag here</h2>
+        <h3>Hello World</h3>
+        <ul>
+            <li>Cucumber</li>
+            <li>Oranges</li>
+            <li>Apples</li>
+        </ul>
+        <ol type="a" reversed>
+            <li>Cucumber</li>
+            <li>Apples</li>
+            <li>Oranges</li>
+        </ol>
+    </body>
+</html>
